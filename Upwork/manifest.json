@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "Upwork auto proposal",
+    "version": "1.0",
+    "permissions": [ "identity",  "http://localhost:3003/*","https://www.googleapis.com/","storage","tabs", "activeTab", "scripting"],
+    "oauth2": {
+      "client_id": "150030003207-q4t0ns26fe1rnd7knaii14t1reut2d2c",
+      "scopes": ["profile", "email"]
+    },
+   
+  "content_scripts":  [
+      {
+      "matches": ["https://www.upwork.com/*"],
+      "js": ["UserProfileData.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "signup.html"
+  ],
+    "browser_action": {
+      "default_popup": "login.html",
+      "default_icon": {
+        "16": "ext-icon.png",
+        "48": "ext-icon.png",
+        "128": "ext-icon.png"
+      }
+    },
+    "icons": {
+      "16": "ext-icon.png",
+      "48": "ext-icon.png",
+      "128": "ext-icon.png"
+    }
+  }
