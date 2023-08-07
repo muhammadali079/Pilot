@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+<head>  
+  <title>Sign Up / Log In</title>
+  <link rel="stylesheet" type="text/css" href="signUp.css">
+</head>
+<body>
+
+  <h1>Sign Up </h1>
+  <button id="GotoLoginPage" >Log in </button>
+  <form id="signup-form" >
+    <input type="text" placeholder="Username" id="username" required>
+    <input type="text" placeholder="Email" id="Email" required>
+    <p id="emailValidationMessage" style="display: none;">Please use @gmail.com in your email address</p>
+    <input type="password" placeholder="Password" id="password" required>
+    <p id="passwordValidationMessage" style="display: none;">password length must be altleast 8 letters</p>
+    <button type="submit" id="formSubmit">Sign Up</button>
+  </form>
+  <script src="SignUp.js"></script>
+ 
+</body>
+</html>

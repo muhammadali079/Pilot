@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta name="google-signin-client_id" content="150030003207-q4t0ns26fe1rnd7knaii14t1reut2d2c.apps.googleusercontent.com">
+  <title>Sign Up / Log In</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+  <h1>Log In</h1>
+  <button  id="GoTosignUpPage">Sign UP</button>
+  <div id="login-container">
+    <form id="login-form">
+      <input type="text" placeholder="Email" id="login-email" required>
+      <input type="password" placeholder="Password" id="login-password" required>
+      <p id="CredentialsValidationMessage" style="display: none;">Invalid email or password</p>
+      <button type="submit" id="formSubmit">Log In</button>
+   </form>
+  </div>
+  <button id="google-login">Log In with Google</button>
+  <script src="login.js"></script>
+</body>
+</html>
